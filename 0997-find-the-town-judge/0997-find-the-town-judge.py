@@ -1,6 +1,6 @@
 class Solution:
     def findJudge(self, n: int, trust: List[List[int]]) -> int:
-        dg = [0] * (1000 + 1)
+        dg = [0] * (n + 1)
         for i in trust:
             dg[i[0]] -= 1 # out
             dg[i[1]] += 1 # in
